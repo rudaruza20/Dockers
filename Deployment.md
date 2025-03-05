@@ -8,13 +8,11 @@ docker network create my-red
 docker run -d --name mysql_server01 -p 5100:3306 -e MYSQL_ROOT_PASSWORD=1234 --network my-red -v ${PWD}/mysql-data:/var/lib/mysql mysql:latest 
 ````
 ## Instalar apache con php y mysqli // clase para conectar a BDD MySQL
-``
 crear dockerfile  
-
+``
 docker build -t apache-php-mysqli .  
-
+``
 docker run -d -p 80:80 --name my-apache-php-mysqli -v ${PWD}:/var/www/html apache-php-mysqli  
-
 ``
 ## Instalar PhpMyAdmin 
 ``
