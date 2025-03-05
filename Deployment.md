@@ -12,7 +12,7 @@ crear dockerfile
 ``
 docker build -t apache-php-mysqli .  
 ``
-docker run -d -p 80:80 --name my-apache-php-mysqli -v ${PWD}:/var/www/html apache-php-mysqli  
+docker run -d -p 80:80 --name my-apache-php-mysqli -v ${PWD}:/var/www/html apache-php-mysqli
 ``
 ## Instalar PhpMyAdmin 
 ``
