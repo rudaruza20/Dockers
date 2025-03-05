@@ -12,8 +12,9 @@ docker run -d --name mysql_server01 -p 5100:3306 -e MYSQL_ROOT_PASSWORD=1234 --n
 ```
 docker build -t apache-php-mysqli .  
 ```
+```
 docker run -d -p 80:80 --name my-apache-php-mysqli -v ${PWD}:/var/www/html apache-php-mysqli
-``
+```
 ## Instalar PhpMyAdmin 
 ```
 docker run --name phpmyadmin -d -e PMA_ARBITRARY=1 -p 9000:80 --network my-red phpmyadmin
